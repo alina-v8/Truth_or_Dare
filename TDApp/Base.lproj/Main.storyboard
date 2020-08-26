@@ -87,7 +87,7 @@
         <!--CategoryScreen-->
         <scene sceneID="ixP-Nx-ZlO">
             <objects>
-                <viewController id="lxd-1d-oKD" userLabel="CategoryScreen" customClass="CategoryVC" customModule="TDApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lxd-1d-oKD" userLabel="CategoryScreen" customClass="CategoryScreen" customModule="TDApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T8C-YZ-mF9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,20 +96,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TRv-ZW-fPQ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="acr-yX-wFE">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TYj-9c-lDg">
+                                <rect key="frame" x="48" y="109" width="319" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7i2-TJ-bot">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="02w-yO-HU7">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="IRq-Tb-CdO">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DSv-xc-gOp">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2Wc-4c-OjF">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
@@ -118,19 +118,13 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="TRv-ZW-fPQ" firstAttribute="trailing" secondItem="For-mB-JgF" secondAttribute="trailing" id="2Fv-Ka-eYb"/>
-                            <constraint firstItem="TRv-ZW-fPQ" firstAttribute="bottom" secondItem="For-mB-JgF" secondAttribute="bottom" id="3Po-9V-exo"/>
-                            <constraint firstItem="TRv-ZW-fPQ" firstAttribute="top" secondItem="For-mB-JgF" secondAttribute="top" id="QIR-lc-VfL"/>
-                            <constraint firstItem="TRv-ZW-fPQ" firstAttribute="leading" secondItem="For-mB-JgF" secondAttribute="leading" id="u7K-kO-p0x"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="For-mB-JgF"/>
                     </view>
                     <navigationItem key="navigationItem" id="uB4-Sy-Z6s">
                         <barButtonItem key="backBarButtonItem" title=" " id="M7K-dz-Tix"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="categoryCollectionView" destination="TRv-ZW-fPQ" id="Ljq-SI-ak2"/>
+                        <outlet property="catCollectionView" destination="TYj-9c-lDg" id="2t3-Yj-if3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xv7-X3-BZz" sceneMemberID="firstResponder"/>

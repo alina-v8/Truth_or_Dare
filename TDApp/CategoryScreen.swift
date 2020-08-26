@@ -10,21 +10,60 @@ import UIKit
 
 class CategoryScreen: UIViewController {
 
+    @IBOutlet weak var catCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        catCollectionView.register(CategoryCell.nib(), forCellWithReuseIdentifier: "CategoryCell")
+
+        let cellLayout = UICollectionViewFlowLayout()
+        cellLayout.itemSize = CGSize(width: 200, height: 230)
+        
+        catCollectionView.collectionViewLayout = cellLayout
+        
+        catCollectionView.delegate = self
+        catCollectionView.dataSource = self
+
+        
+        catCollectionView.backgroundColor = .clear
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+extension CategoryScreen: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        catCollectionView.deselectItem(at: indexPath, animated: true)
+        print ("you tapped me")
+    }
+    
+}
+
+extension CategoryScreen: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = catCollectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCell
+        cell.configure(with: UIImage (named: "whiteCircle")!)
+        
+        return cell
+    }
+    
+    
+}
+
+extension CategoryScreen: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 200, height: 230)
+    }
+    
+}
+
+

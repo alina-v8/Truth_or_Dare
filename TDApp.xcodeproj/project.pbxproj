@@ -15,6 +15,8 @@
 		C78C2C9124EFEF33008CE4F7 /* Ranchers-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C78C2C9024EFEF33008CE4F7 /* Ranchers-Regular.ttf */; };
 		C78C2C9324EFF13A008CE4F7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78C2C9224EFF13A008CE4F7 /* MainVC.swift */; };
 		C78C2C9924F4819C008CE4F7 /* CategoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78C2C9824F4819C008CE4F7 /* CategoryScreen.swift */; };
+		C78C2C9C24F6FF91008CE4F7 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78C2C9A24F6FF91008CE4F7 /* CategoryCell.swift */; };
+		C78C2C9D24F6FF91008CE4F7 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C78C2C9B24F6FF91008CE4F7 /* CategoryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		C78C2C9024EFEF33008CE4F7 /* Ranchers-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ranchers-Regular.ttf"; sourceTree = "<group>"; };
 		C78C2C9224EFF13A008CE4F7 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		C78C2C9824F4819C008CE4F7 /* CategoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryScreen.swift; sourceTree = "<group>"; };
+		C78C2C9A24F6FF91008CE4F7 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		C78C2C9B24F6FF91008CE4F7 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				C78C2C8524EF3E0B008CE4F7 /* Assets.xcassets */,
 				C78C2C8724EF3E0B008CE4F7 /* LaunchScreen.storyboard */,
 				C78C2C8A24EF3E0B008CE4F7 /* Info.plist */,
+				C78C2C9A24F6FF91008CE4F7 /* CategoryCell.swift */,
+				C78C2C9B24F6FF91008CE4F7 /* CategoryCell.xib */,
 			);
 			path = TDApp;
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C78C2C9D24F6FF91008CE4F7 /* CategoryCell.xib in Resources */,
 				C78C2C8924EF3E0B008CE4F7 /* LaunchScreen.storyboard in Resources */,
 				C78C2C9124EFEF33008CE4F7 /* Ranchers-Regular.ttf in Resources */,
 				C78C2C8624EF3E0B008CE4F7 /* Assets.xcassets in Resources */,
@@ -149,6 +156,7 @@
 				C78C2C9924F4819C008CE4F7 /* CategoryScreen.swift in Sources */,
 				C78C2C7D24EF3E09008CE4F7 /* AppDelegate.swift in Sources */,
 				C78C2C7F24EF3E09008CE4F7 /* SceneDelegate.swift in Sources */,
+				C78C2C9C24F6FF91008CE4F7 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
