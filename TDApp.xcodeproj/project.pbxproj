@@ -17,6 +17,7 @@
 		C78C2C9924F4819C008CE4F7 /* CategoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78C2C9824F4819C008CE4F7 /* CategoryScreen.swift */; };
 		C78C2C9C24F6FF91008CE4F7 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78C2C9A24F6FF91008CE4F7 /* CategoryCell.swift */; };
 		C78C2C9D24F6FF91008CE4F7 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C78C2C9B24F6FF91008CE4F7 /* CategoryCell.xib */; };
+		C7EB9B6624FB1B8B0042C47E /* GameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB9B6524FB1B8B0042C47E /* GameScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C78C2C9824F4819C008CE4F7 /* CategoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryScreen.swift; sourceTree = "<group>"; };
 		C78C2C9A24F6FF91008CE4F7 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		C78C2C9B24F6FF91008CE4F7 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		C7EB9B6524FB1B8B0042C47E /* GameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			children = (
 				C78C2C7C24EF3E09008CE4F7 /* AppDelegate.swift */,
 				C78C2C7E24EF3E09008CE4F7 /* SceneDelegate.swift */,
+				C7EB9B6524FB1B8B0042C47E /* GameScreen.swift */,
 				C78C2C9224EFF13A008CE4F7 /* MainVC.swift */,
 				C78C2C9824F4819C008CE4F7 /* CategoryScreen.swift */,
 				C78C2C8224EF3E09008CE4F7 /* Main.storyboard */,
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C78C2C9324EFF13A008CE4F7 /* MainVC.swift in Sources */,
+				C7EB9B6624FB1B8B0042C47E /* GameScreen.swift in Sources */,
 				C78C2C9924F4819C008CE4F7 /* CategoryScreen.swift in Sources */,
 				C78C2C7D24EF3E09008CE4F7 /* AppDelegate.swift in Sources */,
 				C78C2C7F24EF3E09008CE4F7 /* SceneDelegate.swift in Sources */,

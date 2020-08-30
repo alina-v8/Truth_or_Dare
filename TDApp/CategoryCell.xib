@@ -16,21 +16,32 @@
                 <rect key="frame" x="0.0" y="0.0" width="160" height="180"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="szh-LZ-Dlt">
-                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="szh-LZ-Dlt">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="157"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLS-Xz-rrG">
+                        <rect key="frame" x="0.0" y="157" width="160" height="23"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                        <color key="textColor" red="0.98039215690000003" green="0.97254901959999995" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="KLS-Xz-rrG" firstAttribute="top" secondItem="szh-LZ-Dlt" secondAttribute="bottom" id="3tx-No-kQ3"/>
                 <constraint firstItem="szh-LZ-Dlt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="B6T-yw-xaU"/>
+                <constraint firstItem="KLS-Xz-rrG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="G3B-ab-QPr"/>
+                <constraint firstAttribute="bottom" secondItem="KLS-Xz-rrG" secondAttribute="bottom" id="UFL-Jd-Mvt"/>
                 <constraint firstItem="szh-LZ-Dlt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jPm-DS-i1k"/>
+                <constraint firstAttribute="trailing" secondItem="KLS-Xz-rrG" secondAttribute="trailing" id="lqo-0u-c9B"/>
                 <constraint firstAttribute="trailing" secondItem="szh-LZ-Dlt" secondAttribute="trailing" id="ywP-tc-JoB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
                 <outlet property="catImage" destination="szh-LZ-Dlt" id="i7x-Id-WsT"/>
+                <outlet property="catLabel" destination="KLS-Xz-rrG" id="y31-rI-I5B"/>
             </connections>
-            <point key="canvasLocation" x="139" y="129"/>
+            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
         </collectionViewCell>
     </objects>
 </document>
